@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnLens — From scores to learning insights.">
+    <meta name="theme-color" content="#4f46e5">
+    <title>LearnLens — From scores to learning insights</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-shell">
+
+        <header class="topbar">
+            <div
+                class="brand"
+                role="button"
+                tabindex="0"
+                aria-label="Go to LearnLens home"
+                onclick="window.location.href='index.html'"
+            >
+                <div class="brand-mark">L</div>
+
+                <div class="brand-copy">
+                    <span class="brand-name">LearnLens</span>
+                    <span class="brand-tagline">Learning intelligence</span>
+                </div>
+            </div>
+
+            <div class="topbar-status">
+                <span class="status-dot"></span>
+                <span>Learning platform</span>
+            </div>
+        </header>
+
+        <main id="app" class="main-content">
+
+            <section
+                id="landing-view"
+                class="view active-view"
+                aria-labelledby="landing-title"
+            >
+
+                <div class="landing-container">
+
+                    <div class="hero-section">
+
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot"></span>
+                            Intelligent learning insights
+                        </div>
+
+                        <h1 id="landing-title">
+                            Turn scores into
+                            <span class="gradient-text">
+                                learning insights.
+                            </span>
+                        </h1>
+
+                        <p class="hero-description">
+                            LearnLens helps educators understand learning patterns
+                            and gives students clearer paths toward meaningful progress.
+                        </p>
+
+                    </div>
+
+                    <div class="role-section">
+
+                        <div class="section-heading">
+                            <span class="eyebrow">GET STARTED</span>
+
+                            <h2>Choose your portal</h2>
+
+                            <p>
+                                Select how you would like to use LearnLens.
+                            </p>
+                        </div>
+
+                        <div class="role-grid">
+
+                            <!-- TEACHER PORTAL -->
+
+                            <button
+                                class="role-card teacher-card"
+                                type="button"
+                                onclick="window.location.href='teacher_dashboard.html'"
+                                aria-label="Enter Teacher Portal"
+                            >
+
+                                <div class="role-card-top">
+
+                                    <div class="role-icon teacher-icon">
+
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M4 19.5V5.8C4 4.806 4.806 4 5.8 4H18.2C19.194 4 20 4.806 20 5.8V19.5L17 17.8L14 19.5L11 17.8L8 19.5L5 17.8L4 19.5Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+
+                                            <path
+                                                d="M8 8H16"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                            />
+
+                                            <path
+                                                d="M8 11.5H16"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                            />
+
+                                            <path
+                                                d="M8 15H12.5"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                            />
+                                        </svg>
+
+                                    </div>
+
+                                    <span class="role-arrow">
+
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M5 12H19"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                            />
+
+                                            <path
+                                                d="M13 6L19 12L13 18"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+
+                                    </span>
+
+                                </div>
+
+                                <div class="role-card-content">
+
+                                    <span class="role-label">
+                                        For educators
+                                    </span>
+
+                                    <h3>
+                                        Teacher Portal
+                                    </h3>
+
+                                    <p>
+                                        Create classrooms, build diagnostics,
+                                        and turn assessment data into actionable
+                                        classroom insights.
+                                    </p>
+
+                                </div>
+
+                                <div class="role-card-footer">
+
+                                    <span>
+                                        Manage your classroom
+                                    </span>
+
+                                    <span class="footer-arrow">
+
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M5 12H19"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                            />
+
+                                            <path
+                                                d="M13 6L19 12L13 18"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+
+                                    </span>
+
+                                </div>
+
+                            </button>
+
+
+                            <!-- STUDENT PORTAL -->
+
+                            <button
+                                class="role-card student-card"
+                                type="button"
+                                onclick="window.location.href='student_dashboard.html'"
+                                aria-label="Enter Student Portal"
+                            >
+
+                                <div class="role-card-top">
+
+                                    <div class="role-icon student-icon">
+
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M12 4L3 8.5L12 13L21 8.5L12 4Z"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+
+                                            <path
+                                                d="M7 11V15.5C7 17.433 9.239 19 12 19C14.761 19 17 17.433 17 15.5V11"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                            />
+
+                                            <path
+                                                d="M21 9V14"
+                                                stroke="currentColor"
+                                                stroke-width="1.7"
+                                                stroke-linecap="round"
+                                            />
+                                        </svg>
+
+                                    </div>
+
+                                    <span class="role-arrow">
+
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M5 12H19"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                            />
+
+                                            <path
+                                                d="M13 6L19 12L13 18"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+
+                                    </span>
+
+                                </div>
+
+                                <div class="role-card-content">
+
+                                    <span class="role-label">
+                                        For learners
+                                    </span>
+
+                                    <h3>
+                                        Student Portal
+                                    </h3>
+
+                                    <p>
+                                        Join your classroom, complete diagnostics,
+                                        and discover personalized opportunities
+                                        to strengthen your learning.
+                                    </p>
+
+                                </div>
+
+                                <div class="role-card-footer">
+
+                                    <span>
+                                        Continue learning
+                                    </span>
+
+                                    <span class="footer-arrow">
+
+                                        <svg
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M5 12H19"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                            />
+
+                                            <path
+                                                d="M13 6L19 12L13 18"
+                                                stroke="currentColor"
+                                                stroke-width="1.8"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+
+                                    </span>
+
+                                </div>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="platform-features">
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M4 19V5"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                    />
+
+                                    <path
+                                        d="M4 19H20"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                    />
+
+                                    <path
+                                        d="M7.5 15L11 11.5L14 13.5L19 8"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <strong>Learning analytics</strong>
+                                <span>Understand performance patterns</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature-divider"></div>
+
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 3L14.7 8.3L20.5 9.1L16.3 13.2L17.3 19L12 16.3L6.7 19L7.7 13.2L3.5 9.1L9.3 8.3L12 3Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <strong>Personalized insights</strong>
+                                <span>Turn results into next steps</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature-divider"></div>
+
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                    />
+
+                                    <path
+                                        d="M8 12L10.5 14.5L16 9"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+
+                            </div>
+
+                            <div>
+                                <strong>Built for educators</strong>
+                                <span>Support decisions, not replace them</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer class="site-footer">
+
+            <span>LearnLens</span>
+
+            <span class="footer-dot"></span>
+
+            <span>
+                From scores to learning insights
+            </span>
+
+        </footer>
+
+    </div>
+
+
+    <div
+        id="toast-container"
+        class="toast-container"
+        aria-live="polite"
+    ></div>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

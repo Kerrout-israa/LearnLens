@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LearnLens Student Portal — Personalized learning insights.">
+    <title>LearnLens — Student Portal</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="student_dashboard.css">
+
+
+</head>
+
+<body>
+
+<div class="app-shell">
+
+
+<header class="topbar">
+    <div
+        class="brand"
+        id="brandButton"
+        role="button"
+        tabindex="0"
+    >
+        <div class="brand-mark">L</div>
+
+        <div class="brand-copy">
+            <span class="brand-name">LearnLens</span>
+            <span class="brand-tagline">Learning intelligence</span>
+        </div>
+    </div>
+
+    <div class="topbar-right">
+        <span class="role-badge" id="roleBadge">Student</span>
+
+        <button
+            type="button"
+            class="btn btn-secondary topbar-button"
+            id="classInsightsBtn"
+        >
+            Class Insights
+        </button>
+    </div>
+</header>
+
+
+<main class="main-content">
+
+    <!-- JOIN CLASSROOM -->
+    <section id="joinView" class="view">
+
+        <div class="auth-layout">
+
+            <div class="auth-intro">
+
+                <span class="eyebrow">STUDENT PORTAL</span>
+
+                <h1>
+                    Join your classroom
+                </h1>
+
+                <p>
+                    Enter your name and the classroom code provided
+                    by your teacher to access your learning space.
+                </p>
+
+                <div class="intro-points">
+
+                    <div class="intro-point">
+                        <span class="point-icon">✓</span>
+                        <span>Access classroom assessments</span>
+                    </div>
+
+                    <div class="intro-point">
+                        <span class="point-icon">✓</span>
+                        <span>View your learning profile</span>
+                    </div>
+
+                    <div class="intro-point">
+                        <span class="point-icon">✓</span>
+                        <span>Receive personalized practice</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card join-card">
+
+                <div class="card-header">
+
+                    <div class="card-icon">L</div>
+
+                    <div>
+                        <h2>Join a classroom</h2>
+                        <p>Use the code provided by your teacher.</p>
+                    </div>
+
+                </div>
+
+
+                <form id="joinForm">
+
+                    <div class="form-group">
+
+                        <label for="studentName">
+                            Your name
+                        </label>
+
+                        <input
+                            id="studentName"
+                            type="text"
+                            placeholder="e.g. Maria"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="classCode">
+                            Class code
+                        </label>
+
+                        <input
+                            id="classCode"
+                            type="text"
+                            placeholder="e.g. DB-7K42"
+                            maxlength="8"
+                            autocomplete="off"
+                            required
+                        >
+
+                        <span class="field-hint">
+                            Ask your teacher for the classroom code.
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary btn-full"
+                    >
+                        Join Classroom
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+
+                <div class="demo-hint">
+                    <span>Demo classroom</span>
+                    <strong>DB-7K42</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STUDENT DASHBOARD -->
+    <section id="dashboardView" class="view">
+
+        <div class="page-header">
+
+            <div>
+                <span class="eyebrow">MY LEARNING</span>
+
+                <h1>My Classroom</h1>
+
+                <p id="welcomeMessage">
+                    Welcome back.
+                </p>
+            </div>
+
+            <button
+                type="button"
+                class="btn btn-secondary"
+                id="changeClassroomBtn"
+            >
+                Change Classroom
+            </button>
+
+        </div>
+
+
+        <div class="card classroom-hero">
+
+            <div class="classroom-hero-main">
+
+                <div class="classroom-icon">
+                    DB
+                </div>
+
+                <div>
+                    <span class="eyebrow">CLASSROOM</span>
+
+                    <h2>Database Systems</h2>
+
+                    <p>
+                        Computer Science · Undergraduate
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="classroom-code">
+
+                <span>Class code</span>
+
+                <strong>DB-7K42</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="section-heading">
+            <span class="eyebrow">ASSESSMENTS</span>
+            <h2>Available assessments</h2>
+        </div>
+
+
+        <div class="card assessment-card">
+
+            <div class="assessment-icon">
+                ✓
+            </div>
+
+
+            <div class="assessment-content">
+
+                <div class="assessment-topline">
+
+                    <span class="status-badge status-new">
+                        New
+                    </span>
+
+                    <span class="assessment-time">
+                        ~10 min
+                    </span>
+
+                </div>
+
+                <h3>
+                    Normalization Diagnostic
+                </h3>
+
+                <p>
+                    Understand how well you can apply
+                    normalization concepts to database scenarios.
+                </p>
+
+                <div class="assessment-meta">
+                    <span>8 questions</span>
+                    <span>4 skill areas</span>
+                    <span>Personalized insights</span>
+                </div>
+
+            </div>
+
+
+            <div class="assessment-action">
+    <a
+        href="quizz.html"
+        class="btn btn-primary"
+        id="startAssessmentBtn"
+    >
+        Start
+        <span>→</span>
+    </a>
+</div>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <div class="card profile-preview-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <span class="eyebrow">
+                            YOUR LEARNING PROFILE
+                        </span>
+
+                        <h2>Current progress</h2>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="text-button"
+                        id="viewProfileBtn"
+                    >
+                        View profile →
+                    </button>
+
+                </div>
+
+
+                <div class="profile-preview-main">
+
+                    <div class="score-circle">
+
+                        <strong id="dashboardOverallScore">
+                            63%
+                        </strong>
+
+                        <span>overall</span>
+
+                    </div>
+
+
+                    <div class="profile-preview-bars">
+
+                        <div class="mini-progress-item">
+
+                            <div>
+                                <span>Understanding</span>
+                                <strong id="dashboardUnderstanding">
+                                    82%
+                                </strong>
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="dashboardUnderstandingBar"
+                                    class="progress-fill"
+                                    style="width:82%"
+                                ></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mini-progress-item">
+
+                            <div>
+                                <span>Recall</span>
+                                <strong id="dashboardRecall">
+                                    78%
+                                </strong>
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="dashboardRecallBar"
+                                    class="progress-fill"
+                                    style="width:78%"
+                                ></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mini-progress-item">
+
+                            <div>
+                                <span>Application</span>
+                                <strong id="dashboardApplication">
+                                    34%
+                                </strong>
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="dashboardApplicationBar"
+                                    class="progress-fill progress-warning"
+                                    style="width:34%"
+                                ></div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mini-progress-item">
+
+                            <div>
+                                <span>Reasoning</span>
+                                <strong id="dashboardReasoning">
+                                    51%
+                                </strong>
+                            </div>
+
+                            <div class="progress-track">
+                                <div
+                                    id="dashboardReasoningBar"
+                                    class="progress-fill"
+                                    style="width:51%"
+                                ></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card recommendation-preview-card">
+
+                <div class="recommendation-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <span class="eyebrow">
+                        RECOMMENDED
+                    </span>
+
+                    <h2>
+                        Practice applying normalization rules
+                    </h2>
+
+                    <p>
+                        Short targeted practice based on your
+                        current learning profile.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="btn btn-primary"
+                        id="practiceFromDashboardBtn"
+                    >
+                        Start Practice
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="quizView" class="view">
+
+        <div class="quiz-header">
+
+            <button
+                type="button"
+                class="back-button"
+                id="quizBackBtn"
+            >
+                ← Dashboard
+            </button>
+
+
+            <div class="quiz-title">
+
+                <span class="eyebrow">
+                    NORMALIZATION DIAGNOSTIC
+                </span>
+
+                <h1>Knowledge Check</h1>
+
+            </div>
+
+
+            <div class="quiz-progress-info">
+                <span id="questionCounter">
+                    Question 1 of 8
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="quiz-progress">
+
+            <div
+                id="quizProgressFill"
+                class="quiz-progress-fill"
+                style="width:12.5%"
+            ></div>
+
+        </div>
+
+
+        <div class="quiz-layout">
+
+            <div class="card question-card">
+
+                <div class="question-top">
+
+                    <span
+                        id="questionNumber"
+                        class="question-number"
+                    >
+                        Question 1
+                    </span>
+
+                    <span
+                        id="questionCategory"
+                        class="question-category"
+                    >
+                        Recall
+                    </span>
+
+                </div>
+
+
+                <h2 id="questionText">
+                    Question text
+                </h2>
+
+
+                <div
+                    id="optionsList"
+                    class="options-list"
+                ></div>
+
+            </div>
+
+
+            <div class="quiz-footer">
+
+                <button
+                    type="button"
+                    id="previousQuestionBtn"
+                    class="btn btn-secondary"
+                >
+                    ← Previous
+                </button>
+
+                <button
+                    type="button"
+                    id="nextQuestionBtn"
+                    class="btn btn-primary"
+                >
+                    Next →
+                </button>
+
+                <button
+                    type="button"
+                    id="submitQuizBtn"
+                    class="btn btn-primary hidden"
+                >
+                    Submit Assessment
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULTS -->
+    <section id="resultsView" class="view">
+
+        <div class="page-header results-header">
+
+            <div>
+                <span class="eyebrow">LEARNING PROFILE</span>
+
+                <h1>Your Learning Profile</h1>
+
+                <p>
+                    Your diagnostic results show how you performed
+                    across several learning dimensions.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="card overall-result">
+
+            <div class="overall-score">
+
+                <span class="eyebrow">
+                    OVERALL PERFORMANCE
+                </span>
+
+                <strong id="overallScore">
+                    63%
+                </strong>
+
+                <span>
+                    diagnostic score
+                </span>
+
+            </div>
+
+
+            <div class="overall-message">
+
+                <h2>
+                    Your results are ready.
+                </h2>
+
+                <p>
+                    The profile below is calculated from your
+                    answers in the diagnostic assessment.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="learning-profile-grid">
+
+            <div class="card profile-metric">
+
+                <div class="metric-header">
+                    <span>Understanding</span>
+                    <strong id="understandingScore">82%</strong>
+                </div>
+
+                <div class="large-progress">
+                    <div
+                        id="understandingBar"
+                        class="large-progress-fill"
+                        style="width:82%"
+                    ></div>
+                </div>
+
+                <p>
+                    Recognizing and explaining core concepts.
+                </p>
+
+            </div>
+
+
+            <div class="card profile-metric">
+
+                <div class="metric-header">
+                    <span>Recall</span>
+                    <strong id="recallScore">78%</strong>
+                </div>
+
+                <div class="large-progress">
+                    <div
+                        id="recallBar"
+                        class="large-progress-fill"
+                        style="width:78%"
+                    ></div>
+                </div>
+
+                <p>
+                    Remembering key concepts and terminology.
+                </p>
+
+            </div>
+
+
+            <div class="card profile-metric focus-metric">
+
+                <div class="metric-header">
+                    <span>Application</span>
+                    <strong id="applicationScore">34%</strong>
+                </div>
+
+                <div class="large-progress">
+                    <div
+                        id="applicationBar"
+                        class="large-progress-fill warning-fill"
+                        style="width:34%"
+                    ></div>
+                </div>
+
+                <p>
+                    Applying concepts to unfamiliar scenarios.
+                </p>
+
+            </div>
+
+
+            <div class="card profile-metric">
+
+                <div class="metric-header">
+                    <span>Reasoning</span>
+                    <strong id="reasoningScore">51%</strong>
+                </div>
+
+                <div class="large-progress">
+                    <div
+                        id="reasoningBar"
+                        class="large-progress-fill"
+                        style="width:51%"
+                    ></div>
+                </div>
+
+                <p>
+                    Connecting concepts to solve new problems.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card insight-card">
+
+            <div class="insight-icon">
+                !
+            </div>
+
+            <div class="insight-content">
+
+                <span class="eyebrow">
+                    MAIN AREA TO PRACTICE
+                </span>
+
+                <h2 id="mainAreaTitle">
+                    Application
+                </h2>
+
+                <p id="mainAreaDescription">
+                    Your application result indicates an opportunity
+                    for additional targeted practice.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card recommendation-card">
+
+            <div class="recommendation-icon">
+                ✦
+            </div>
+
+            <div class="recommendation-content">
+
+                <span class="eyebrow">
+                    RECOMMENDED NEXT STEP
+                </span>
+
+                <h2>
+                    Practice applying normalization rules
+                    to new database schemas.
+                </h2>
+
+                <p>
+                    Work through short scenarios that ask you
+                    to identify dependencies and choose the
+                    appropriate normalization step.
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                class="btn btn-primary"
+                id="startPersonalizedPracticeBtn"
+            >
+                Start Practice
+                <span>→</span>
+            </button>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="text-button"
+            id="resultsBackBtn"
+        >
+            ← Back to classroom
+        </button>
+
+    </section>
+
+
+    <!-- REMEDIATION -->
+    <section id="remediationView" class="view">
+
+        <div class="page-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    PERSONALIZED PRACTICE
+                </span>
+
+                <h1>Strengthen Application</h1>
+
+                <p>
+                    Short targeted practice based on your diagnostic.
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                class="back-button"
+                id="remediationBackBtn"
+            >
+                ← Results
+            </button>
+
+        </div>
+
+
+        <div id="remediationExercise">
+
+            <div class="card practice-intro">
+
+                <div class="practice-icon">
+                    ✦
+                </div>
+
+                <div>
+
+                    <span class="eyebrow">
+                        SHORT EXPLANATION
+                    </span>
+
+                    <h2>
+                        Think beyond identifying the rule
+                    </h2>
+
+                    <p>
+                        Normalization is not only about remembering
+                        definitions. When given a new database schema,
+                        look at relationships between attributes and
+                        determine whether one attribute depends on another.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="card worked-example">
+
+                <div class="example-header">
+
+                    <span class="example-label">
+                        WORKED EXAMPLE
+                    </span>
+
+                    <span class="example-step">
+                        01
+                    </span>
+
+                </div>
+
+                <h2>StudentCourse</h2>
+
+                <div class="schema-box">
+                    <code>
+                        StudentID | CourseID | StudentName
+                    </code>
+                </div>
+
+                <div class="example-steps">
+
+                    <div class="example-step-row">
+
+                        <span>1</span>
+
+                        <div>
+                            <strong>Identify the composite key</strong>
+
+                            <p>
+                                StudentID + CourseID identify each record.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-step-row">
+
+                        <span>2</span>
+
+                        <div>
+                            <strong>Check dependencies</strong>
+
+                            <p>
+                                StudentName depends on StudentID only.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="example-step-row">
+
+                        <span>3</span>
+
+                        <div>
+                            <strong>Separate the dependency</strong>
+
+                            <p>
+                                Move student information into a separate
+                                Student table when moving toward 2NF.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card practice-question">
+
+                <div class="practice-question-header">
+
+                    <span id="remediationQuestionCounter">
+                        Practice question 1 of 3
+                    </span>
+
+                    <div class="practice-progress">
+                        <div
+                            id="remediationProgressFill"
+                            style="width:33%"
+                        ></div>
+                    </div>
+
+                </div>
+
+
+                <h2 id="remediationQuestionText">
+                    Practice question
+                </h2>
+
+
+                <div
+                    id="remediationOptionsList"
+                    class="options-list"
+                ></div>
+
+
+                <div class="quiz-footer">
+
+                    <button
+                        type="button"
+                        id="previousRemediationBtn"
+                        class="btn btn-secondary"
+                    >
+                        ← Previous
+                    </button>
+
+                    <button
+                        type="button"
+                        id="nextRemediationBtn"
+                        class="btn btn-primary"
+                    >
+                        Next →
+                    </button>
+
+                    <button
+                        type="button"
+                        id="submitRemediationBtn"
+                        class="btn btn-primary hidden"
+                    >
+                        Finish Practice
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="remediationCompletion"
+            class="card completion-card hidden"
+        >
+
+            <div class="completion-icon">
+                ✓
+            </div>
+
+            <span class="eyebrow">
+                PRACTICE COMPLETE
+            </span>
+
+            <h1>Nice work.</h1>
+
+            <p>
+                You completed the targeted application practice.
+            </p>
+
+
+            <div class="improvement-result">
+
+                <div class="improvement-score">
+
+                    <span>Before</span>
+
+                    <strong id="beforeApplicationScore">
+                        34%
+                    </strong>
+
+                </div>
+
+
+                <div class="improvement-arrow">
+                    →
+                </div>
+
+
+                <div class="improvement-score">
+
+                    <span>Practice</span>
+
+                    <strong id="afterApplicationScore">
+                        0%
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="improvement-summary">
+
+                <strong id="improvementPoints">
+                    +0 percentage points
+                </strong>
+
+                <span id="remediationAccuracy">
+                    0 of 3 targeted questions answered correctly.
+                </span>
+
+            </div>
+
+
+            <div class="completion-actions">
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    id="completionProfileBtn"
+                >
+                    View Learning Profile
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="retryRemediationBtn"
+                >
+                    Practice Again
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+
+</main>
+
+
+<footer class="site-footer">
+    <span>LearnLens</span>
+    <span class="footer-dot"></span>
+    <span>From scores to learning insights</span>
+</footer>
+```
+
+</div>
+
+<div
+    id="toast"
+    class="toast"
+    aria-live="polite"
+>
+    <span id="toastMessage"></span>
+</div>
+
+<script src="student_dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnLens — Assessment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quizz.css">
+</head>
+<body>
+    <main class="quiz-container">
+        <!-- Loading State -->
+        <div id="loadingState" class="loading-state">
+            Loading assessment data...
+        </div>
+
+        <!-- Quiz Interface (Hidden until data loads) -->
+        <div id="quizInterface" class="hidden">
+            <div class="quiz-header">
+                <button type="button" class="back-button" id="quizBackBtn">
+                    ← Back to Dashboard
+                </button>
+
+                <div class="quiz-title">
+                    <span class="eyebrow" id="assessmentTitle">NORMALIZATION DIAGNOSTIC</span>
+                    <h1>Knowledge Check</h1>
+                </div>
+
+                <div class="quiz-progress-info">
+                    <span id="questionCounter">Question 1 of 8</span>
+                </div>
+            </div>
+
+            <div class="quiz-progress">
+                <div id="quizProgressFill" class="quiz-progress-fill" style="width:0%"></div>
+            </div>
+
+            <div class="quiz-layout">
+                <div class="card question-card">
+                    <div class="question-top">
+                        <span id="questionNumber" class="question-number">Question 1</span>
+                        <span id="questionCategory" class="question-category">Category</span>
+                    </div>
+
+                    <h2 id="questionText">Question text will appear here</h2>
+
+                    <div id="optionsList" class="options-list">
+                        <!-- Options injected by JS -->
+                    </div>
+                </div>
+
+                <div class="quiz-footer">
+                    <button type="button" id="previousQuestionBtn" class="btn btn-secondary" disabled>
+                        ← Previous
+                    </button>
+                    <button type="button" id="nextQuestionBtn" class="btn btn-primary">
+                        Next →
+                    </button>
+                    <button type="button" id="submitQuizBtn" class="btn btn-primary hidden">
+                        Submit Assessment <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="toast" class="toast" aria-live="polite">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
